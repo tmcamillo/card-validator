@@ -24,11 +24,8 @@ describe('returnsValidatorCard()', () => {
     	assert.equal(returnsValidatorCard('52342152'), false);
     });
 
-    // it('must return true', () => {
-    // 	assert.equal(returnsValidatorCard(5234215246260320), true);
-    // });
+    it('must return true', () => {
+    	assert.equal(returnsValidatorCard(5234215246260328), true);
+    }); 
 
-    it('must return false', () => {
-    	assert.equal(returnsValidatorCard('1111111111111111'), false);
-    });
 });
