@@ -1,4 +1,4 @@
-# Validador de CPF
+# Validador de Cartão de Crédito
 Esta biblioteca destina-se à validação de números de Cartões de Crédito.
 Na versão atual é capaz de retornar se o número informado é valido ou não.
 
