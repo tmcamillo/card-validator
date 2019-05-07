@@ -8,12 +8,12 @@ const doubleNcheck = (el) => {
 };
 
 const cardValidator = (cardNumber) => {
-  let cleanedCard = cleanMask(cardNumber);
-  if (cleanedCard.length !== 16) {
+  let cleanedCardNumber = cleanMask(cardNumber);
+  if (cleanedCardNumber.length !== 16) {
     return false;
-  }
-  let evenPositions = cleanedCard.split('').map((el, ind) => {
-    return ind % 2 === 0 ? doubleNcheck(el) : parseInt(el); 
+  };
+  let evenPositions = cleanedCardNumber.split('').map((el, ind) => {
+    return parseInt(ind % 2 === 0 ? doubleNcheck(el) : el); 
   });
   let removedLastDig = evenPositions.pop();
   let total = evenPositions.reduce((sum, curV) => { 
