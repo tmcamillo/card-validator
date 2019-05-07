@@ -28,4 +28,8 @@ describe('returnsValidatorCard()', () => {
     	assert.equal(returnsValidatorCard(5234215246260328), true);
     }); 
 
+    it('must return false', () => {
+    	assert.equal(returnsValidatorCard(''), false);
+    }); 
+
 });
