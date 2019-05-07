@@ -11,7 +11,7 @@ const cardValidator = (cardNumber) => {
   let cleanedCardNumber = cleanMask(cardNumber);
   if (cleanedCardNumber.length !== 16) {
     return false;
-  };
+  }
   let evenPositions = cleanedCardNumber.split('').map((el, ind) => {
     return parseInt(ind % 2 === 0 ? doubleNcheck(el) : el); 
   });
